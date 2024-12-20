@@ -43,6 +43,8 @@ public class AiTabViewModel implements PreferenceTabViewModel {
     private final BooleanProperty disableAutoGenerateEmbeddings = new SimpleBooleanProperty();
     private final BooleanProperty autoGenerateSummaries = new SimpleBooleanProperty();
     private final BooleanProperty disableAutoGenerateSummaries = new SimpleBooleanProperty();
+    private final BooleanProperty generateFollowUpQuestion = new SimpleBooleanProperty();
+    private final BooleanProperty disableGenerateFollowUpQuestion = new SimpleBooleanProperty();
 
     private final ListProperty<AiProvider> aiProvidersList =
             new SimpleListProperty<>(FXCollections.observableArrayList(AiProvider.values()));
@@ -456,6 +458,14 @@ public class AiTabViewModel implements PreferenceTabViewModel {
 
     public BooleanProperty disableAutoGenerateSummaries() {
         return disableAutoGenerateSummaries;
+    }
+
+    public BooleanProperty generateFollowUpQuestion() {
+        return generateFollowUpQuestion;
+    }
+
+    public BooleanProperty disableGenerateFollowUpQuestion() {
+        return disableGenerateFollowUpQuestion;
     }
 
     public ReadOnlyListProperty<AiProvider> aiProvidersProperty() {

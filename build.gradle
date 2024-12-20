@@ -422,6 +422,7 @@ dependencies {
                     attribute(MachineArchitecture.ARCHITECTURE_ATTRIBUTE, objects.named(MachineArchitecture, DefaultNativePlatform.getCurrentArchitecture().getName()))
                 }
             }
+
 }
 
 clean {

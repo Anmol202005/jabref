@@ -57,6 +57,14 @@
                   HBox.hgrow="ALWAYS"
                   maxWidth="Infinity"/>
 
+        <CheckBox
+                fx:id="generateFollowUpQuestions"
+                mnemonicParsing="false"
+                text="%Generate follow-up questions"
+                HBox.hgrow="ALWAYS"
+                maxWidth="Infinity"/>
+
+
         <Label styleClass="sectionHeader"
                text="%Connection"/>
 

@@ -59,6 +59,9 @@ public class AiDefaultPreferences {
     public static final boolean AUTO_GENERATE_EMBEDDINGS = false;
     public static final boolean AUTO_GENERATE_SUMMARIES = false;
 
+
+
+
     public static final AiProvider PROVIDER = AiProvider.OPEN_AI;
 
     public static final Map<AiProvider, PredefinedChatModel> CHAT_MODELS = Map.of(
@@ -70,6 +73,7 @@ public class AiDefaultPreferences {
     );
 
     public static final boolean CUSTOMIZE_SETTINGS = false;
+
 
     public static final EmbeddingModel EMBEDDING_MODEL = EmbeddingModel.SENTENCE_TRANSFORMERS_ALL_MINILM_L12_V2;
     public static final String SYSTEM_MESSAGE = "You are an AI assistant that analyses research papers. You answer questions about papers. You will be supplied with the necessary information. The supplied information will contain mentions of papers in form '@citationKey'. Whenever you refer to a paper, use its citation key in the same form with @ symbol. Whenever you find relevant information, always use the citation key. Here are the papers you are analyzing:\n";
